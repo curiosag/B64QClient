@@ -1,0 +1,16 @@
+
+textarea {
+   resize: none;
+}
+
+
+
+table {
+  align: left;
+}
+
+.anyButton {
+  display: block;
+  font-size: 16pt;
+}
+

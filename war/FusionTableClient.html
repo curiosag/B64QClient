@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<link type="text/css" rel="stylesheet" href="FusionTableClient.css">
+<title></title>
+<script type="text/javascript"
+	src="fusiontableclient/fusiontableclient.nocache.js"></script>
+</head>
+
+<body>
+	<noscript>
+		<div
+			style="width: 22em; position: absolute; left: 50%; margin-left: -11em; color: red; background-color: white; border: 1px solid red; padding: 4px; font-family: sans-serif">
+			Your web browser must have JavaScript enabled in order for this
+			application to display correctly.</div>
+	</noscript>
+
+	<table>
+		<tr>
+			<td align="right">Decode Ayudasystem (AS) secret dev challenge codes (state 2015-09-14)
+				<br><br>&nbsp;<br>&nbsp;... until the app runs out of
+				googles free quota.&nbsp;</td>
+			<td colspan="2">
+				<ul>
+					<li>supply the code you want to decode, plus
+					<li>a <b>sample of clear text</b>, at least as long as the
+						text to decode, without blanks or \r\n. <br>the 350 character
+						default is just ok (the "0123456789012..."). And
+					<li>the corresponding encoding of the clear text sample.
+				</ul>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="3"> Take the encoding for the clear
+				text sample using <a href="http://www.ayudasystems.com/Jobs/SecretDevChallenge">AS's secret dev challenge page</a>. The AS
+				encoding produces no codes longer than 668 characters,
+				limiting clear texts <br>to 501 characters (as of 2015-09-14). There might be issues in the range between 350 and 501 too, but I didn't go into details there. The default value shown decodes oords btw.<br>
+				<br>&nbsp;
+			</td>
+		</tr>
+
+		<tr>
+			<td><textarea id="clearText" rows="15" cols="60"></textarea></td>
+			<td>
+				<table>
+					<tr>
+						<td id="decryptButton" width="260px" align="center"></td>
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+					</tr>
+					<tr>
+						<td id="encryptButton" width="260px" align="center"></td>
+					</tr>
+				</table>
+			</td>
+			<td><textarea id="encodedText" rows="15" cols="60"></textarea></td>
+		</tr>
+
+		<tr>
+			<td><textarea id="responseText" rows="23" cols="60"></textarea></td>
+			<td>
+				<table>
+					<tr>
+						<td><img width="1" height="190" alt="" src="./spacer.gif"
+							align="bottom"></td>
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+					</tr>
+					<tr>
+						<td><img width="90" height="80" id="cow" alt="" src="./grazing.gif"
+							align="bottom"></td>
+					</tr>
+				</table>
+			</td>
+			<td><table>
+					<tr>
+						<td>sample of clear text</td>
+					</tr>
+					<tr>
+						<td><textarea id="clearSampleText" rows="9" cols="60"></textarea></td>
+					</tr>
+					<tr>
+						<td>corresponding code sample - clear text sample encoded</td>
+					</tr>
+					<tr>
+						<td><textarea id="codeSampleText" rows="9" cols="60"></textarea></td>
+					</tr>
+				</table>
+			<td>
+		</tr>
+	</table>
+</body>
+</html>
