@@ -18,10 +18,10 @@ public class CodecServiceImpl extends RemoteServiceServlet implements
 		encode, decode
 	}
 
-	private Feedback f = new FeedbackAggregator();
-
 	private String runOp(Op op, String text, String clearSample,
 			String encodedSample) {
+		
+		Feedback f = new FeedbackAggregator();
 		String error = "";
 		String result = "";
 
